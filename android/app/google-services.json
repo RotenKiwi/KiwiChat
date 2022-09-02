@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "553802450302",
+    "project_id": "kiwichat-70852",
+    "storage_bucket": "kiwichat-70852.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:553802450302:android:7dc8e57b2ce519541b5f2f",
+        "android_client_info": {
+          "package_name": "com.example.kiwichat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "553802450302-aeo5dhsi8j6l9gm3rn4v1rng92g5i0hc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB97SP39qG0T33Ygfq-1mJzXvLwuk6lGfs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "553802450302-aeo5dhsi8j6l9gm3rn4v1rng92g5i0hc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
