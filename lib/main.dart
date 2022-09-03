@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'LoginScreen.dart';
+import 'package:kiwichat/Screens/WelcomeScreen.dart';
+import 'Screens/LoginScreen.dart';
 
 Future main() async{
   WidgetsFlutterBinding.ensureInitialized();
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
     debugShowCheckedModeBanner: false,
-    home: LoginScreen(),
+    home: WelcomeScreen(),
     ); //MaterialApp
   } //Widget
 } //MyApp
