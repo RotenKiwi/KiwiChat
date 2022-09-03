@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 
-class body extends StatelessWidget {
-  const body({Key? key}) : super(key: key);
+class background extends StatelessWidget {
+  const background({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
