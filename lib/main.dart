@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'LoginScreen.dart';
 
 Future main() async{
   WidgetsFlutterBinding.ensureInitialized();
@@ -11,7 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-    debugShowCheckedModeBanner: false;
+    debugShowCheckedModeBanner: false,
     home: LoginScreen(),
     ); //MaterialApp
   } //Widget
