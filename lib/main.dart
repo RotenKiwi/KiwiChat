@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: 'KiwiChat',
     debugShowCheckedModeBanner: false,
     home: WelcomeScreen(),
     ); //MaterialApp
