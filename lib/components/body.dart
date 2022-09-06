@@ -6,12 +6,14 @@ class body extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     return background(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
-        children: <Widget>[Text("KiwiChat", style: TextStyle(fontWeight: FontWeight.bold),)],
+        children: <Widget>[
+          TextButton(onPressed: (){}, child: Text("Login"))
+        ],
       ),
     );
+
   }
 }

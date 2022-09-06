@@ -23,8 +23,21 @@ class background extends StatelessWidget {
             )),
           ),
           Positioned(
+            top: 150,
+            left: 60,
             child: Image.asset('assets/images/logo.png'),
-          )
+          ),
+          const Positioned(
+              top: 150,
+              right: 60,
+              child: Text(
+                'Kiwi \nChat',
+                style: TextStyle(
+                  fontWeight: FontWeight.w900,
+                  fontSize: 55,
+                  color: Color(0xff295e13),
+                ),
+              ))
           //child,
         ],
       ),
