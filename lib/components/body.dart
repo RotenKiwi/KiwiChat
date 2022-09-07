@@ -6,14 +6,20 @@ class body extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-        child: background(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: const <Widget>[],
-
-      ),
-
+    Size size = MediaQuery.of(context).size;
+    return Background(
+        child: Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: const <Widget>[
+        Text(
+          'Kiwi \nChat',
+          style: TextStyle(
+            fontWeight: FontWeight.w900,
+            fontSize: 55,
+            color: Color(0xff295e13),
+          ),
+        )
+      ],
     ));
   }
 }
