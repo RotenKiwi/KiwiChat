@@ -7,7 +7,9 @@ class background extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
+    Size size = MediaQuery
+        .of(context)
+        .size;
     return Container(
       height: size.height,
       width: double.infinity,
@@ -17,10 +19,10 @@ class background extends StatelessWidget {
           Center(
             child: Container(
                 decoration: const BoxDecoration(
-              image: DecorationImage(
-                  fit: BoxFit.cover,
-                  image: AssetImage('assets/images/background.jpg')),
-            )),
+                  image: DecorationImage(
+                      fit: BoxFit.cover,
+                      image: AssetImage('assets/images/background.jpg')),
+                )),
           ),
           Positioned(
             top: 150,

@@ -6,14 +6,14 @@ class body extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return background(
+    return Container(
+        child: background(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
-        children: <Widget>[
-          TextButton(onPressed: (){}, child: Text("Login"))
-        ],
-      ),
-    );
+        children: const <Widget>[],
 
+      ),
+
+    ));
   }
 }
