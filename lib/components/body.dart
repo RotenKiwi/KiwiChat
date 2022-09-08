@@ -19,9 +19,7 @@ class body extends StatelessWidget {
             color: Color(0xff295e13),
           ),
         ),
-        Image(
-
-            image: AssetImage('assets/images/logo.png'))
+        Image(image: AssetImage('assets/images/logo.png'))
       ],
     ));
   }
