@@ -18,7 +18,10 @@ class body extends StatelessWidget {
             fontSize: 55,
             color: Color(0xff295e13),
           ),
-        )
+        ),
+        Image(
+
+            image: AssetImage('assets/images/logo.png'))
       ],
     ));
   }
