@@ -8,10 +8,11 @@ class body extends StatelessWidget {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Background(
-        child: Column(
-      children: const <Widget>[
-        Align(
-          alignment: Alignment(0.5,0),
+        child: Stack(
+      children:  <Widget>[
+        const Positioned(
+          top: 200,
+          right: 65,
           child: Text(
             'Kiwi \nChat',
             style: TextStyle(
@@ -21,9 +22,16 @@ class body extends StatelessWidget {
             ),
           ),
         ),
-        Align(
-          alignment: Alignment(-0.5, 0.0),
-            child: Image(image: AssetImage('assets/images/logo.png')))
+        const Positioned(
+            top: 200,
+            left: 65,
+            child: Image(image: AssetImage('assets/images/logo.png'))),
+        Positioned(
+            top: 300,
+            child: Padding(
+              padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 40),
+              child: OutlinedButton(onPressed: (){}, child: const Text('Login')),
+            ))
       ],
     ));
   }
