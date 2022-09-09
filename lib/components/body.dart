@@ -40,10 +40,10 @@ class body extends StatelessWidget {
                   press: () {},
                 ))),
         Positioned(
-            top:460,
+            top: 460,
             child: Padding(
                 padding:
-                const EdgeInsets.symmetric(vertical: 20, horizontal: 40),
+                    const EdgeInsets.symmetric(vertical: 20, horizontal: 40),
                 child: RoundedButton(
                   length: size * 0.8,
                   text: 'SignUp',
