@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'RoundedButton.dart';
 import 'background.dart';
 
 class body extends StatelessWidget {
@@ -9,7 +10,7 @@ class body extends StatelessWidget {
     Size size = MediaQuery.of(context).size;
     return Background(
         child: Stack(
-      children:  <Widget>[
+      children: <Widget>[
         const Positioned(
           top: 200,
           right: 65,
@@ -27,16 +28,29 @@ class body extends StatelessWidget {
             left: 65,
             child: Image(image: AssetImage('assets/images/logo.png'))),
         Positioned(
-            top: 350,
-            left: 120,
+            top: 400,
             child: Padding(
-              padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 40),
-              child: Container(
-                color: Color(0xffa3d975),
-                child: TextButton(
-                  onPressed: (){},
-                  child: const Text('Login')),
-            )))
+                padding:
+                    const EdgeInsets.symmetric(vertical: 20, horizontal: 40),
+                child: RoundedButton(
+                  length: size * 0.8,
+                  text: 'Login',
+                  color: Color(0xf01b491b),
+                  textColor: Colors.white,
+                  press: () {},
+                ))),
+        Positioned(
+            top:460,
+            child: Padding(
+                padding:
+                const EdgeInsets.symmetric(vertical: 20, horizontal: 40),
+                child: RoundedButton(
+                  length: size * 0.8,
+                  text: 'SignUp',
+                  color: Color(0xf01b491b),
+                  textColor: Colors.white,
+                  press: () {},
+                )))
       ],
     ));
   }
