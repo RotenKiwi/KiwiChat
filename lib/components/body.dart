@@ -9,17 +9,21 @@ class body extends StatelessWidget {
     Size size = MediaQuery.of(context).size;
     return Background(
         child: Column(
-      mainAxisAlignment: MainAxisAlignment.center,
       children: const <Widget>[
-        Text(
-          'Kiwi \nChat',
-          style: TextStyle(
-            fontWeight: FontWeight.w900,
-            fontSize: 55,
-            color: Color(0xff295e13),
+        Align(
+          alignment: Alignment(0.5,0),
+          child: Text(
+            'Kiwi \nChat',
+            style: TextStyle(
+              fontWeight: FontWeight.w900,
+              fontSize: 55,
+              color: Color(0xff295e13),
+            ),
           ),
         ),
-        Image(image: AssetImage('assets/images/logo.png'))
+        Align(
+          alignment: Alignment(-0.5, 0.0),
+            child: Image(image: AssetImage('assets/images/logo.png')))
       ],
     ));
   }
