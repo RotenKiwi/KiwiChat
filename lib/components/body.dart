@@ -27,11 +27,16 @@ class body extends StatelessWidget {
             left: 65,
             child: Image(image: AssetImage('assets/images/logo.png'))),
         Positioned(
-            top: 300,
+            top: 350,
+            left: 120,
             child: Padding(
               padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 40),
-              child: OutlinedButton(onPressed: (){}, child: const Text('Login')),
-            ))
+              child: Container(
+                color: Color(0xffa3d975),
+                child: TextButton(
+                  onPressed: (){},
+                  child: const Text('Login')),
+            )))
       ],
     ));
   }
