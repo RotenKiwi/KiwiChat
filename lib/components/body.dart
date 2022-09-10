@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kiwichat/Screens/LoginScreen.dart';
 import 'RoundedButton.dart';
 import 'background.dart';
 
@@ -37,7 +38,7 @@ class body extends StatelessWidget {
                   text: 'Login',
                   color: Color(0xf01b491b),
                   textColor: Colors.white,
-                  press: () {},
+                  press: () {Navigator.push(context, MaterialPageRoute(builder: (context){return LoginScreen();},),);},
                 ))),
         Positioned(
             top: 460,
