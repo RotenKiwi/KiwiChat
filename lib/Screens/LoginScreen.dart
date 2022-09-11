@@ -39,7 +39,7 @@ class LoginScreen extends StatelessWidget {
       //Back Button
       const Positioned(
         top: 200,
-        right: 35,
+        right: 65,
         child: Text(
           'Kiwi \nChat',
           style: TextStyle(
@@ -52,7 +52,7 @@ class LoginScreen extends StatelessWidget {
       //name 'kiwichat'
       const Positioned(
           top: 200,
-          left: 55,
+          left: 65,
           child: Image(image: AssetImage('assets/images/logo.png'))),
       //logo
       Positioned(

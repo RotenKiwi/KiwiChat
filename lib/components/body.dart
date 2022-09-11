@@ -9,8 +9,9 @@ class body extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
-    return Background(
-        child: Stack(
+    return Scaffold(
+        body: Background(
+            child: Stack(
       children: <Widget>[
         const Positioned(
           top: 200,
@@ -38,7 +39,16 @@ class body extends StatelessWidget {
                   text: 'Login',
                   color: Color(0xf01b491b),
                   textColor: Colors.white,
-                  press: () {Navigator.push(context, MaterialPageRoute(builder: (context){return LoginScreen();},),);},
+                  press: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) {
+                          return LoginScreen();
+                        },
+                      ),
+                    );
+                  },
                 ))),
         Positioned(
             top: 460,
@@ -53,6 +63,6 @@ class body extends StatelessWidget {
                   press: () {},
                 )))
       ],
-    ));
+    )));
   }
 }
