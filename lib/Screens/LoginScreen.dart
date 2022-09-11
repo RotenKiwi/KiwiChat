@@ -14,8 +14,8 @@ class LoginScreen extends StatelessWidget {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
         body: SingleChildScrollView(
-        child: Background(
-            child: Stack(alignment: Alignment.center, children: <Widget>[
+            child: Background(
+                child: Stack(alignment: Alignment.center, children: <Widget>[
       Positioned(
         top: 20,
         left: 20,
@@ -67,9 +67,9 @@ class LoginScreen extends StatelessWidget {
       Positioned(
           bottom: 250,
           width: size.width * 0.8,
-          child: RoundedPasswordField(onChanged: (value){},))
+          child: RoundedPasswordField(
+            onChanged: (value) {},
+          ))
     ]))));
   }
 }
-
-
