@@ -3,6 +3,8 @@ import 'package:kiwichat/Screens/WelcomeScreen.dart';
 import 'package:kiwichat/components/RoundedButton.dart';
 import 'package:kiwichat/components/background.dart';
 
+import '../components/TextFieldContainer.dart';
+
 class LoginScreen extends StatelessWidget {
   const LoginScreen({Key? key}) : super(key: key);
 
@@ -54,30 +56,9 @@ class LoginScreen extends StatelessWidget {
       Positioned(
         bottom: 320,
         width: size.width * 0.8,
-        child: TextFieldContainer(child: TextField()),
+        child: RoundedInputField(icon: Icons.person, HintText: 'example@mail.com', onChanged: (value){},),
       )
     ])));
   }
 }
 
-class TextFieldContainer extends StatelessWidget {
-  final Widget child;
-
-  const TextFieldContainer({
-    Key? key,
-    required this.child,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      margin: EdgeInsets.symmetric(vertical: 10),
-      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 5),
-      decoration: BoxDecoration(
-        color: Color(0xff000000),
-        borderRadius: BorderRadius.circular(30),
-      ),
-      child: child,
-    );
-  }
-}
