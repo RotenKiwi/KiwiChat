@@ -3,6 +3,7 @@ import 'package:kiwichat/Screens/WelcomeScreen.dart';
 import 'package:kiwichat/components/RoundedButton.dart';
 import 'package:kiwichat/components/background.dart';
 
+import '../components/RoundedPasswordField.dart';
 import '../components/TextFieldContainer.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -12,7 +13,8 @@ class LoginScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
-        body: Background(
+        body: SingleChildScrollView(
+        child: Background(
             child: Stack(alignment: Alignment.center, children: <Widget>[
       Positioned(
         top: 20,
@@ -56,9 +58,18 @@ class LoginScreen extends StatelessWidget {
       Positioned(
         bottom: 320,
         width: size.width * 0.8,
-        child: RoundedInputField(icon: Icons.person, HintText: 'example@mail.com', onChanged: (value){},),
-      )
-    ])));
+        child: RoundedInputField(
+          icon: Icons.person,
+          HintText: 'example@mail.com',
+          onChanged: (value) {},
+        ),
+      ), //username/mail input field
+      Positioned(
+          bottom: 250,
+          width: size.width * 0.8,
+          child: RoundedPasswordField(onChanged: (value){},))
+    ]))));
   }
 }
+
 
