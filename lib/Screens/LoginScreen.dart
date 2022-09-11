@@ -9,8 +9,9 @@ class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
-    return Background(
-        child: Stack(alignment: Alignment.center, children: <Widget>[
+    return Scaffold(
+        body: Background(
+            child: Stack(alignment: Alignment.center, children: <Widget>[
       Positioned(
         top: 20,
         left: 20,
@@ -31,6 +32,7 @@ class LoginScreen extends StatelessWidget {
           length: size * 0.2,
         ), //back button
       ),
+      //Back Button
       const Positioned(
         top: 200,
         right: 35,
@@ -50,26 +52,32 @@ class LoginScreen extends StatelessWidget {
           child: Image(image: AssetImage('assets/images/logo.png'))),
       //logo
       Positioned(
-          bottom: 320,
-          width: size.width * 0.8,
-          child: TextFieldContainer())
-    ]));
+        bottom: 320,
+        width: size.width * 0.8,
+        child: TextFieldContainer(child: TextField()),
+      )
+    ])));
   }
 }
 
 class TextFieldContainer extends StatelessWidget {
+  final Widget child;
+
   const TextFieldContainer({
     Key? key,
+    required this.child,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 25),
+      margin: EdgeInsets.symmetric(vertical: 10),
+      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 5),
       decoration: BoxDecoration(
         color: Color(0xff000000),
         borderRadius: BorderRadius.circular(30),
       ),
+      child: child,
     );
   }
 }
