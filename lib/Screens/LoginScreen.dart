@@ -51,7 +51,7 @@ class LoginScreen extends StatelessWidget {
       ),
       //name 'kiwichat'
       const Positioned(
-          top: 200,
+          top: 210,
           left: 65,
           child: Image(image: AssetImage('assets/images/logo.png'))),
       //logo
