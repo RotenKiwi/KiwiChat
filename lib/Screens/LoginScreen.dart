@@ -65,7 +65,7 @@ class LoginScreen extends StatelessWidget {
         ),
       ), //username/mail input field
       Positioned(
-          bottom: 250,
+          bottom: 240,
           width: size.width * 0.8,
           child: RoundedPasswordField(
             onChanged: (value) {},
