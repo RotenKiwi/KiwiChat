@@ -56,7 +56,7 @@ class LoginScreen extends StatelessWidget {
           child: Image(image: AssetImage('assets/images/logo.png'))),
       //logo
       Positioned(
-        bottom: 320,
+        bottom: 310,
         width: size.width * 0.8,
         child: RoundedInputField(
           icon: Icons.person,
